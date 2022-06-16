@@ -1,0 +1,150 @@
+html {
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    font-size: 18px;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+}
+
+.wrapper {
+    height: calc(100vh - 50px);
+    margin: 25px;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 20px;
+}
+
+.wrapper > div:not(#title) {
+    background-color: rgb(54, 54, 66);
+    border-radius: 20px;
+}
+
+#title {
+    grid-column: 1 / 17;
+    grid-row: 1;
+
+    display:flex;
+    align-items:center;
+
+    padding-left: 20px;
+
+    font-size: 1.5rem;
+}
+
+#graph {
+    grid-column: 1 / 13;
+    grid-row: 2 / 10;
+}
+
+#rate {
+    grid-column: 13 / 17;
+    grid-row: 2 / 6;
+    display:flex;
+    align-items:center;
+}
+
+#flowrate {
+    margin: auto;
+}
+
+#flowrate-value {
+    font-size: 2rem;
+}
+
+#flowrate-unit {
+    font-size: 1rem;
+}
+
+#battery {
+    grid-column: 13 / 17;
+    grid-row: 6 / 10;
+    display:flex;
+    align-items:center;
+}
+
+#battery-bar {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+/* .circle-process-bar {
+    position: relative;
+}
+
+.wrapper-right {
+    width: 266px;
+    height: 266px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+
+.wrapper-left {
+    width: 133px;
+    height: 266px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+} */
+
+/* .right-circle {
+    width: 250px;
+    height: 250px;
+    
+    border: 8px solid transparent;
+    border-top: 8px solid #38B99B;
+    border-right: 8px solid #38B99B;
+    border-radius: 50%;
+    
+    transform: rotate(-135deg);
+
+    animation-name: right-circle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
+
+/* .left-circle {
+    width: 250px;
+    height: 250px;
+    
+    border: 8px solid transparent;
+    border-top: 8px solid #38B99B;
+    border-right: 8px solid #38B99B;
+    border-radius: 50%;
+    
+    transform: rotate(-135deg);
+
+    animation-name: left-circle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right-circle{
+    0%, 50%{
+        transform : rotate(-135deg);
+    }
+    100%{
+        transform : rotate(45deg);
+    }
+}
+
+@keyframes left-circle{
+    0%, 50%{
+        transform : rotate(-135deg);
+    }
+    100%{
+        transform : rotate(45deg);
+    }
+} */

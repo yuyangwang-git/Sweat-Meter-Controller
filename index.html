@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author", content="Yuyang Wang">
+    <meta name="description", content="This is a demo for testing sweat flow meter">
+
+    <title>Sweat Meter Controller</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="box0">0</div> -->
+        <div id="title">Sweat Monitor</div>
+        
+        <div id="graph"></div>
+        
+        <div id="rate">
+            <div id="flowrate">
+                <span id="flowrate-value">0.00</span>
+                <span id="flowrate-unit">μL/min</span>
+            </div>
+        </div>
+
+        <div id="battery">
+            <!-- <div class="circle-process-bar">                
+                <div class="wrapper-right">
+                    <div class="right-circle"></div>
+                </div>
+                <div class="wrapper-left">
+                    <div class="left-circle"></div>
+                </div>
+            </div> -->
+            <div id="battery-bar"></div>
+        </div>
+    </div>
+
+    <script src="echarts.js"></script>
+    <script src="progressbar.js"></script>
+    <script src="impedance.js"></script>
+    <script src="battery.js"></script>
+    <script src="flowrate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "sweat-meter-controller",
+  "version": "1.0.0",
+  "description": "This is a demo for testing sweat flow meter.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuyangwang-git"
+  },
+  "author": "Yuyang Wang",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.4"
+  }
+}
